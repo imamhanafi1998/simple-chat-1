@@ -1,0 +1,34 @@
+{
+  "name": "simple-chat-1",
+  "version": "1.0.0",
+  "description": "Simple Chat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imamhanafi1998/simple-chat-1.git"
+  },
+  "keywords": [
+    "socket.io",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Imam Hanafi <h.imam1998@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imamhanafi1998/simple-chat-1/issues"
+  },
+  "homepage": "https://github.com/imamhanafi1998/simple-chat-1#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mongoose": "^5.10.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {}
+}
