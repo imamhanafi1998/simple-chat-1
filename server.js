@@ -64,6 +64,6 @@ io.on("connection", socket => {
 
 mongoose.connect(dbUrl, { useNewUrlParser: true })
 
-const server = http.listen(3000, () => {
+const server = http.listen(3030, () => {
     console.log(`server is running on port ${server.address().port}`)
 })

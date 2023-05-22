@@ -121,7 +121,7 @@
             const getMessages = () => {
                 $.ajax({
                     type: "get",
-                    url: "http://localhost:3000/messages",
+                    url: "http://localhost:3030/messages",
                     success: data => {
                         console.log("get success")
                         data.forEach(addMessages)
@@ -131,7 +131,7 @@
             const getMessagesOld = () => {
                 $.ajax({
                     type: "get",
-                    url: "http://localhost:3000/messages",
+                    url: "http://localhost:3030/messages",
                     success: data => {
                         console.log("get success")
                         data.forEach(addMessagesOld)
@@ -143,7 +143,7 @@
                 $.ajax({
                     type: "post",
                     data: message,
-                    url: "http://localhost:3000/messages",
+                    url: "http://localhost:3030/messages",
                     success: () => {
                         console.log("send success")
                     }
