@@ -66,7 +66,7 @@ io.on("connection", socket => {
 })
 
 
-mongoose.connect(dbUrl, { useNewUrlParser: true })
+mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const server = http.listen(3030, () => {
     console.log(`server is running on port ${server.address().port}`)
