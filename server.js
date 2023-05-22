@@ -2,6 +2,9 @@
 const express = require('express')
 const app = express()
 
+// cors
+const cors = require('cors');
+
 // body-parser
 const bodyParser = require('body-parser')
 
@@ -14,6 +17,7 @@ const http = require('http').Server(app)
 // socket.io
 const io = require('socket.io')(http)
 
+app.use(cors());
 app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
