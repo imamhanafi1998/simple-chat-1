@@ -47,6 +47,12 @@ app.post('/messages', async (req, res) => {
         res.sendStatus(200);
     })
 })
+app.get('/delete-messages', (req, res) => {
+    Message.deleteMany({}, (err, messages) => {
+        res.send([]);
+        console.log("sukses")
+    })
+})
 
 // io.on('connection', () => {
 //     console.log("client connected")
