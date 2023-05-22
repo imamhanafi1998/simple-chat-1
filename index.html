@@ -58,6 +58,8 @@
         </div>
     </footer>
     <script>
+        const URL = 'http://realtime-chat-imamhanafi.snap-gw.ramaoding.com/'
+        // const URL = 'http://localhost:3030/messages'
         var socket = io()
         $(document).ready(() => {
             const h = $('#footer').height()
@@ -121,7 +123,7 @@
             const getMessages = () => {
                 $.ajax({
                     type: "get",
-                    url: "http://localhost:3030/messages",
+                    url: URL,
                     success: data => {
                         console.log("get success")
                         data.forEach(addMessages)
@@ -131,7 +133,7 @@
             const getMessagesOld = () => {
                 $.ajax({
                     type: "get",
-                    url: "http://localhost:3030/messages",
+                    url: URL,
                     success: data => {
                         console.log("get success")
                         data.forEach(addMessagesOld)
@@ -143,7 +145,7 @@
                 $.ajax({
                     type: "post",
                     data: message,
-                    url: "http://localhost:3030/messages",
+                    url: URL,
                     success: () => {
                         console.log("send success")
                     }
